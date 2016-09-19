@@ -4,7 +4,7 @@
 
 {% for content in contents %}
   <div class="content">
-    <div class="content-title">{{content.title}}</div>
+    <a href="/blog/{{content.key().id()}}"><div class="content-title">{{content.title}}</div></a>
     <pre class="content-body">{{content.content}}</pre>
   </div>
 {% endfor %}
